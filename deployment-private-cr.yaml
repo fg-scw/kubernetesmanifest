@@ -21,7 +21,7 @@ spec:
       - image: babarz0r/test:5
         name: flaskdemo
         imagePullSecrets:
-      - name: regcred
+      - name: myregistrykey
         resources: {}
 status: {}
 ---
