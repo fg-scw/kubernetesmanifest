@@ -4,7 +4,7 @@ metadata:
   creationTimestamp: null
   labels:
     app: flaskdemo
-  name: flaskdemo
+  name: flaskdemo-private-cr
 spec:
   replicas: 3
   selector:
@@ -20,6 +20,10 @@ spec:
       containers:
       - image: babarz0r/test:5
         name: flaskdemo
+        imagePullPolicy: Always
+        command: [ "echo", "SUCCESS" ]
+        imagePullSecrets:
+      - name: myregistrykey
         resources: {}
 status: {}
 ---
