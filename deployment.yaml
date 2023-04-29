@@ -4,7 +4,7 @@ metadata:
   creationTimestamp: null
   labels:
     app: flaskdemo
-  name: flaskdemo-private-cr
+  name: flaskdemo
 spec:
   replicas: 3
   selector:
