@@ -20,7 +20,7 @@ spec:
       imagePullSecrets:
       - name: myregistrykey
       containers:
-      - image: raj80dockerid/test:6
+      - image: babarz0r/test:6
         name: flaskdemo
         resources: {}
 status: {}
