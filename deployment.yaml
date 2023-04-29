@@ -20,7 +20,7 @@ spec:
       imagePullSecrets:
       - name: myregistrykey
       containers:
-      - image: babarz0r/test:7
+      - image: babarz0r/test:11
         name: flaskdemo
         resources: {}
 status: {}
