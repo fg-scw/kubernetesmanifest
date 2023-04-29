@@ -17,13 +17,11 @@ spec:
       labels:
         app: flaskdemo
     spec:
-      containers:
-      - image: babarz0r/test:6
-        name: flaskdemo
-        imagePullPolicy: Always
-        command: [ "echo", "SUCCESS" ]
-        imagePullSecrets:
+      imagePullSecrets:
       - name: myregistrykey
+      containers:
+      - image: raj80dockerid/test:6
+        name: flaskdemo
         resources: {}
 status: {}
 ---
